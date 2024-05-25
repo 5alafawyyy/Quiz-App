@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/models/question_item_model.dart';
-import 'package:quiz_app/pages/result_page.dart';
+import 'package:quiz_app/widgets/total_score_part.dart';
 import 'package:quiz_app/widgets/answer_item.dart';
 import 'package:quiz_app/widgets/question_item.dart';
 
@@ -57,7 +57,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
             )
-          : ResultPage(
+          : TotalScorePart(
               totalScore: totalScore,
               onPressed: () {
                 setState(() {

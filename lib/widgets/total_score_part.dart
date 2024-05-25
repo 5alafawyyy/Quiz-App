@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ResultPage extends StatelessWidget {
-  const ResultPage({
+class TotalScorePart extends StatelessWidget {
+  const TotalScorePart({
     super.key,
     required this.totalScore,
     required this.onPressed,
