@@ -12,6 +12,7 @@ class MyQuizApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: false,
       ),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Home'),
     );
   }
