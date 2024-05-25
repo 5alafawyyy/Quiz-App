@@ -4,11 +4,11 @@ class TotalScorePart extends StatelessWidget {
   const TotalScorePart({
     super.key,
     required this.totalScore,
-    required this.onPressed,
+    required this.resetQuizOnPressed,
   });
 
   final int totalScore;
-  final VoidCallback onPressed;
+  final VoidCallback resetQuizOnPressed;
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -46,7 +46,7 @@ class TotalScorePart extends StatelessWidget {
           child: Align(
             alignment: Alignment.center,
             child: TextButton(
-              onPressed: onPressed,
+              onPressed: resetQuizOnPressed,
               child: const Text(
                 "Restart Quiz",
               ),

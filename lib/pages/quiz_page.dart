@@ -59,7 +59,7 @@ class _QuizPageState extends State<QuizPage> {
             )
           : TotalScorePart(
               totalScore: totalScore,
-              onPressed: () {
+              resetQuizOnPressed: () {
                 setState(() {
                   questionIndex = 0;
                   totalScore = 0;
